@@ -2,23 +2,20 @@ import React, { Component } from 'react';
 import { Button, Input } from 'reactstrap';
 import axios from 'axios';
 
-export class TitleAdd extends Component {
-  static displayName = TitleAdd.name;
+export class TitleShow extends Component {
+  static displayName = TitleShow.name;
 
   constructor(props) {
     super(props);
-    this.state = { imdbUrl: '' };
-    this.handleChange = this.handleChange.bind(this);
-    this.addTitle = this.addTitle.bind(this);
+    this.state = { loading: true };
   }
 
-  async addTitle() {
-    axios.post('api/titles', { imdbId: this.state.imdbUrl })
-      .then(response => console.log(response));
+  componentDidMount() {
+    this.fetchTitle();
   }
 
-  handleChange(e) {
-    this.setState({imdbUrl: e.target.value});    
+  async fetchTitle() {
+      const response = axios.get('/api/titles/')
   }
 
   render() {

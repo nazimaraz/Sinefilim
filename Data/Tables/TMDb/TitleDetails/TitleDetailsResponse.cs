@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Data.Tables.TMDb.GetTitleDetails
+namespace Data.Tables.TMDb.TitleDetails
 {
     public class TitleDetailsResponse
     {

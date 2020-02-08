@@ -4,4 +4,16 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Context\" />
+    <Folder Include="Tables\" />
+    <Folder Include="Tables\TMDb\" />
+    <Folder Include="Tables\TMDb\TmdbId\" />
+    <Folder Include="Tables\TMDb\TitleDetails\" />
+    <Folder Include="Tables\TMDb\TitleCredits\" />
+    <Folder Include="Tables\TMDb\PersonDetails\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.1" />
+  </ItemGroup>
 </Project>

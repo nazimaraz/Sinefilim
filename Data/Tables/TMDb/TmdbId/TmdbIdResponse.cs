@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace Data.Tables.TMDb.GetTmdbId
+namespace Data.Tables.TMDb.TmdbId
 {
     public class TmdbIdResponse
     {
-        public List<Info> movie_results { get; set; }
+        public List<TmdbIdInfo> movie_results { get; set; }
     }
 }

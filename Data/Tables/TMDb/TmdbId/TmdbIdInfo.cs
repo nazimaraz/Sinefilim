@@ -1,6 +1,6 @@
 ﻿namespace Data.Tables.TMDb.TmdbId
 {
-    public class Info
+    public class TmdbIdInfo
     {
         public int id { get; set; }
     }

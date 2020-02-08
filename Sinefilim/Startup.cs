@@ -5,6 +5,11 @@ using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.EntityFrameworkCore;
+using Data.Context;
+using Business.Interfaces;
+using Business.Services;
+using Business.Repositories;
 
 namespace Sinefilim
 {
@@ -20,8 +25,16 @@ namespace Sinefilim
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<TitleContext>(options =>
+                options.UseMySql(Configuration.GetConnectionString("DefaultConnection"))
+            );
+
+            services.AddScoped<ITitleService, TitleService>();
+            services.AddScoped<IPersonService, PersonService>();
+            services.AddScoped(typeof(ITitleRepository<>), typeof(TitleRepository<>));
 
             services.AddControllersWithViews();
+            services.AddControllers().AddNewtonsoftJson();
 
             // In production, the React files will be served from this directory
             services.AddSpaStaticFiles(configuration =>

@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sinefilim", "Sinefilim\Sinefilim.csproj", "{EAEB343E-0891-4E86-B273-CD711C2E3270}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{CA8858E8-C5CC-4A11-A681-1955AB054B1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Business.csproj", "{92BFB1E9-7486-4054-93DD-38A565BD1B56}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +17,13 @@ Global
 		{EAEB343E-0891-4E86-B273-CD711C2E3270}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAEB343E-0891-4E86-B273-CD711C2E3270}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EAEB343E-0891-4E86-B273-CD711C2E3270}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA8858E8-C5CC-4A11-A681-1955AB054B1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA8858E8-C5CC-4A11-A681-1955AB054B1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA8858E8-C5CC-4A11-A681-1955AB054B1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA8858E8-C5CC-4A11-A681-1955AB054B1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92BFB1E9-7486-4054-93DD-38A565BD1B56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92BFB1E9-7486-4054-93DD-38A565BD1B56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92BFB1E9-7486-4054-93DD-38A565BD1B56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92BFB1E9-7486-4054-93DD-38A565BD1B56}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
